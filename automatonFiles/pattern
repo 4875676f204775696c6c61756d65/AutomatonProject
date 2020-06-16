@@ -1,0 +1,16 @@
+Pattern for txt files :
+
+Begin of files ------------------------------------------------------------------------------------------------------------------
+X (A number between 0 and 52 representing the number of letters in the alphabet of the automaton. No space before no space after.)
+X (A number between 0 and 99 representing the number of states in the automaton. No space before no space after).
+X Y1 Y2 ... Yn (One line of numbers. The first indicates the number of initial states in the automaton. It must be less than or equal to the number of states of the automaton. The following numbers, if the first one is different from 0, indicate which state is initial. They are in ascending order.No spaces before the first number no spaces after the last. A space separates each number. The numbers must correspond to existing states in the autamaton.)
+X Y1 Y2 ... Yn (Same rules as just above, but for the final states this time.)
+X (A number representing the number of existing transitions in the automaton.)
+X1 K1 Z1
+X2 K2 Z2
+X3 K3 Z3
+X4 K4 Z4
+.... (As many lines as there are announced transitions. Each line takes 2 numbers X and Z and a letter K. The first number represents the start state the second the arrival state the letter represents the letter of the transition. There are no spaces before the first number or after the second number. There is only one transition per line. No blank lines between lines and no blank lines before the EOF.)
+End of files ------------------------------------------------------------------------------------------------------------------
+
+In this folder you can see many example of correct txt files.
